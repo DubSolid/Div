@@ -13,7 +13,6 @@ def test_speed():
 
     1) Download Speed
     2) Upload Speed
-    3) Ping
 
     '''))
 
@@ -34,11 +33,6 @@ def test_speed():
             print('Your upload speed is',round(float(up_speed)/MB, 2), "Mbps")
         elif up_speed > KB:
             print('Your upload speed is',round(float(up_speed)/KB, 2), "Kbps")
-
-    elif option == 3:
-        servernames = []
-        st.get_servers(servernames)
-        print(st.results.ping)
 
     else:
         print('Input correct option!')
